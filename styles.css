@@ -8,25 +8,48 @@ main {
   min-height: max-content;
 }
 
-main button {
-  width: 55px;
-  height: 55px;
+.botones {
+  max-width: 55px;
+  max-width: 55px;
   font-size: 40px;
-  border-radius: 5px;
-  border: 0;
   position: fixed;
   bottom: 20px;
   right: 20px;
-
-  transition-duration: 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.botones button {
+  border-radius: 10px;
+  border: 0;
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
-main button:hover {
-  background-color: bisque;
+.btn-zoomin,
+.btn-zoomout {
+  background-color: #ffffff;
+  color: black;
+  font-size: 16px;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.btn-zoomin:hover,
+.btn-zoomout:hover {
+  filter: invert(1);
+}
+
+.botones .add-char {
+  width: 55px;
+  height: 55px;
+}
+
+.botones .add-char:hover {
+  background-color: rgb(179, 125, 11);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
-  width: 57px;
-  height: 57px;
 }
+
 .arbol > div {
   gap: 30px;
   margin-top: 50px;
