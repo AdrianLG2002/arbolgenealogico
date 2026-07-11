@@ -22,14 +22,15 @@ main button:hover {
   height: 57px;
 }
 .arbol > div {
-  gap: 60px;
-  margin-top: 90px;
+  gap: 30px;
+  margin-top: 50px;
 }
 .padres,
 .hijos {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .padres div,
