@@ -2,6 +2,12 @@ body {
   background-color: rgb(185, 183, 183);
 }
 
+main {
+  overflow: auto;
+  min-width: max-content;
+  min-height: max-content;
+}
+
 main button {
   width: 55px;
   height: 55px;
@@ -30,12 +36,12 @@ main button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
 }
 
 .padres div,
 .hijos div {
   margin: 10px;
+  flex-shrink: 0;
 }
 
 .card {
