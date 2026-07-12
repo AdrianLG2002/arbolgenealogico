@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <section class="cuestionario">
+      <form>
+        <h2>Crear Personajes</h2>
+        <div class="campo">
+          <label> 1. Introduzca la foto de la persona </label>
+          <input type="file" />
+        </div>
+        <div class="campo">
+          <label> 2. Introduzca la el nombre de la persona* </label>
+          <input type="text" placeholder="Ej. Adrian Liñan" required />
+        </div>
+        <div class="campo">
+          <label> 3. Introduzca la fecha de nacimiento* </label>
+          <input type="date" required />
+        </div>
+        <h3>Relacion</h3>
+        <div class="campo relacion">
+          <label for="padre1">Hijo de</label>
+          <select id="padre1" name="padre1">
+            <option value="">--Seleccionar--</option>
+          </select>
+          <label for="padre2">y de</label>
+          <select id="padre2" name="padre2">
+            <option value="">--Seleccionar--</option>
+          </select>
+        </div>
+        <div class="form-botones">
+          <button type="submit" class="btn-guardar">Crear</button>
+          <button type="cancelar" class="btn-cancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
     <main>
       <section class="arbol">
         <div class="padres">
