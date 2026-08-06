@@ -92,19 +92,15 @@ main {
   padding-bottom: 50px;
 }
 
-.arbol > div {
-  gap: 30px;
-  margin-top: 50px;
-}
-.padres,
-.hijos {
+.fila-generacion {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
 }
 
-.padres div,
-.hijos div {
+.fila-generacion .card {
   margin: 10px;
   flex-shrink: 0;
 }
